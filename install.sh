@@ -2,11 +2,13 @@
 
 DOTFILES=$( cd $(dirname $0) ; pwd -P )
 
-# zsh
-ln -sf $DOTFILES/zshrc ~/.zshrc
-
 # vim
 ln -sf $DOTFILES/vimrc ~/.vimrc
+ln -sf $DOTFILES/vim/colors ~/.vim/colors
+mkdir -p $HOME/.vim/undo
+mkdir -p $HOME/.vim/backups
+mkdir -p $HOME/.vim/swaps
 
-# tmux
-ln -sf $DOTFILES/tmux.conf ~/.tmux.conf
+# setup vundle
+git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall

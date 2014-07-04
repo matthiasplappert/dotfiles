@@ -1,21 +1,14 @@
-# helper function
-function _git_fast() {
-  git pull
-  git add -A .
-  git commit -m "$1"
-  git push
-}
+alias gp="git pull"
+alias gs="git status"
+alias gdm='git difftool'
+alias gds='git difftool --staged'
+alias gsu='git submodule sync; git submodule update --init --recursive;'
+alias grm="git rm `git ls-files --deleted`"
+alias gbcu="git branch --merged | grep \"matthias/*\" | xargs -n 1 git branch -d"
+alias gcu='git clean -f -d'
 
-alias g="git"
-alias gs="git status -s"
-alias gl="git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
-alias gps="git push"
-alias gpl="git pull"
-alias gcm="git commit"
-alias ga="git add"
-alias gfix="git rm -r --cached . && git add ."
-alias gco="git checkout"
-alias gcl="git clone"
-alias gr="git clean -fd && git checkout ."
-alias gt="git tag"
-alias gf="_git_fast"
+git config alias.co checkout
+parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ →\ \1/'
+}
+export PS1='\[\e[1;37m\][\[\e[1;31m\]\u\[\e[1;37m\]@\[\e[1;32m\]\h\[\e[1;37m\]:\[\e[1;36m\]\w\[\e[1;33m\]$(parse_git_branch)\[\e[1;37m\]]$ \[\e[0m\]'
