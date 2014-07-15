@@ -13,6 +13,7 @@ set cursorline
 set autochdir
 set shell=/bin/bash
 set wildmenu
+set t_Co=256
 
 scriptencoding utf-8
 set encoding=utf-8
