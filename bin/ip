@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'json'
+
+json = `curl -s -S -H "Accept: application/json" http://jsonip.com`
+hash = JSON.parse(json)
+ip   = hash['ip']
+print ip + "\n"
+
+# Copy to pasteboard
+exec 'echo ' + ip + ' | pbcopy'

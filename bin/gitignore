@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'main'
+
+Main {
+  argument :template
+  
+  def initialize
+    @templates = {'default' => '.DS_Store',
+'rails' => '.DS_Store
+
+# Rails
+.bundle
+db/*sqlite3
+log/*.log
+tmp/',
+				  'xcode' => '.DS_Store
+*.swp
+*~.nib
+
+build/*
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+
+*.xcodeproj/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+*/xcuserdata/*'}
+  end
+		  
+  def run
+    template = params[:template].value
+	contents = @templates[template]
+	
+	File.open('.gitignore', 'w') {|f| f.write(contents) }
+  end
+}

@@ -1,6 +1,6 @@
 syntax enable
-colorscheme molokai
 set background=dark
+colorscheme solarized
 set number
 set smartindent
 set tabstop=4

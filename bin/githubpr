@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# First argument: repo, e.g. PSPDFKit/PSPDFKit.
+repo=$1
+
+# Second argument: origin_branch. Defaults to "master".
+if [ -z "$2" ]; then
+	origin_branch="master"
+else
+	origin_branch=$2
+fi
+
+branch_name=$(git rev-parse --abbrev-ref HEAD)
+url="https://github.com/$repo/compare/$origin_branch...$branch_name"
+open $url
