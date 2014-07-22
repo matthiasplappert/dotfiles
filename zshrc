@@ -13,7 +13,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.dotfiles/bin:$PATH
 
 # rvm
-source $HOME/.rvm/scripts/rvm
+#source $HOME/.rvm/scripts/rvm
 
 # docker
 export DOCKER_HOST=tcp://192.168.59.103:2375
