@@ -5,4 +5,4 @@ alias xr="killall Xcode;x"
 alias ls="ls -lag"
 alias ddd="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
 alias wtfxcode="killall -9 Xcode"
-alias iossim='open ~/Library/Application\ Support/iPhone\ Simulator/'
+alias iossim='open ~/Library/Developer/CoreSimulator/Devices/'
