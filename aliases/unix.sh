@@ -12,14 +12,6 @@ alias tk="tmux kill-session -t"
 
 alias v="vim"
 
-alias ..="cd .."
-alias ...="cd ..."
-
-function mkd() {
-  mkdir $1
-  cd $1
-}
-
 function httpsrv {
   port="${1:-3000}"
   ruby -run -e httpd . -p $port
