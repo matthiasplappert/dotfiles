@@ -7,7 +7,6 @@ ZSH_THEME="agnoster"
 
 # paths
 export DOTFILES=$HOME/.dotfiles
-export GOROOT="$HOME/Development/go"
 export GOPATH="$HOME/Development/go"
 export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/local/bin:$PATH
