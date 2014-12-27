@@ -11,6 +11,7 @@ export GOPATH="$HOME/Development/go"
 export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.dotfiles/bin:$PATH
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # rvm
 #source $HOME/.rvm/scripts/rvm
