@@ -1,6 +1,6 @@
 # listing
-alias l="ls -lh --color=auto"
-alias la="ls -lAh --color=auto"
+alias l="ls -lh"
+alias la="ls -lAh"
 
 alias rrm="rm -rf"
 
