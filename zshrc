@@ -5,6 +5,10 @@ DEFAULT_USER="matze"
 UPDATE_ZSH_DAYS=4
 ZSH_THEME="agnoster"
 
+# locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # paths
 export DOTFILES=$HOME/.dotfiles
 export GOPATH="$HOME/Development/go"
@@ -12,6 +16,7 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:/Library/TeX/texbin
 
 # docker
 export DOCKER_TLS_VERIFY=1

@@ -8,7 +8,6 @@ set shiftwidth=4
 set visualbell
 set noerrorbells
 set laststatus=2
-set backspace+=start,eol,indent 
 set cursorline
 set autochdir
 set shell=/bin/bash
