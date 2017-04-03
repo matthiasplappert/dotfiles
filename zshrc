@@ -1,6 +1,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.dotfiles/oh-my-zsh
-plugins=(git gem rake brew go docker)
+plugins=(git gem rake brew go)
 DEFAULT_USER="matze"
 UPDATE_ZSH_DAYS=4
 ZSH_THEME="agnoster"
@@ -18,12 +18,6 @@ export PATH=$HOME/.dotfiles/bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/Library/TeX/texbin
 
-# docker
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/matze/.boot2docker/certs/boot2docker-vm
-
 # sources
 source $ZSH/oh-my-zsh.sh
 for f in $DOTFILES/aliases/*.sh; do source $f; done
-
