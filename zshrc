@@ -1,7 +1,7 @@
 # oh-my-zsh
 export ZSH=$HOME/.dotfiles/oh-my-zsh
-plugins=(git gem rake brew go)
-DEFAULT_USER="matze"
+plugins=(git gem rake brew go pyenv)
+DEFAULT_USER="$(whoami)"
 UPDATE_ZSH_DAYS=4
 ZSH_THEME="agnoster"
 
@@ -21,3 +21,4 @@ export PATH=$PATH:/Library/TeX/texbin
 # sources
 source $ZSH/oh-my-zsh.sh
 for f in $DOTFILES/aliases/*.sh; do source $f; done
+source $DOTFILES/localrc
