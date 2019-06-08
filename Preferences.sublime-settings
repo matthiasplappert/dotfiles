@@ -1,0 +1,19 @@
+{
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+    "convert_tabspaces_on_save": true,
+    "default_line_ending": "unix",
+    "dictionary": "Packages/Language - English/en_US.dic",
+    "enable_count_chars": true,
+    "font_face": "Meslo LG M",
+    "font_size": 13,
+    "hide_sidebar_icons": true,
+    "rulers":
+    [
+        100
+    ],
+    "spell_check": true,
+    "tab_size": 4,
+    "theme": "Solarized Space Dark.sublime-theme",
+    "translate_tabs_to_spaces": true
+}
