@@ -29,7 +29,7 @@ $ bash .dotfiles/install.sh
 * Update font settings to `Meslo LG M 13pt`
 * Check `Save changes to folder when iTerm2 quits`
 
-## Sublime
+## Install Sublime
 * Download and install Sublime
 * Install Package Control: https://packagecontrol.io/installation
 * Install the following packages
@@ -41,3 +41,17 @@ $ bash .dotfiles/install.sh
     * `SublimeLinter-flake8`
     * `Theme - Solarized Space`
 * Copy `Preferences.sublime-settings` into User preferences
+
+## Install pyenv and Python
+```sh
+$ brew install pyenv
+$ brew install zlib
+$ brew install sqlite
+$ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+$ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+$ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
+$ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
+$ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+$ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
+$ pyenv install 3.6.8
+```
