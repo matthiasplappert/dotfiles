@@ -56,6 +56,11 @@ $ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig
 $ pyenv install 3.6.8
 ```
 
+Also add the following to `localrc`:
+```bash
+eval "$(pyenv init -)"
+```
+
 ## Configure keyboard input
 ```sh
 $ defaults write -g InitialKeyRepeat -int 10
