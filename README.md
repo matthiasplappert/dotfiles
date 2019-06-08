@@ -33,10 +33,11 @@ $ bash .dotfiles/install.sh
 * Download and install Sublime
 * Install Package Control: https://packagecontrol.io/installation
 * Install the following packages
-	* `Solarized Color Schema`
-	* `Dockerfile Syntax Highlighter`
-	* `Expand Tabs on Save`
-	* `Protobuf Syntax Highlighter`
-	* `SublimeLinter`
-	* `SublimeLinter-flake8`
-	* `Theme - Solarized Space`
+    * `Solarized Color Schema`
+    * `Dockerfile Syntax Highlighter`
+    * `Expand Tabs on Save`
+    * `Protobuf Syntax Highlighter`
+    * `SublimeLinter`
+    * `SublimeLinter-flake8`
+    * `Theme - Solarized Space`
+* Copy `Preferences.sublime-settings` into User preferences
