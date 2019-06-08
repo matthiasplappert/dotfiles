@@ -55,3 +55,11 @@ $ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 $ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
 $ pyenv install 3.6.8
 ```
+
+## Configure keyboard input
+```sh
+$ defaults write -g InitialKeyRepeat -int 10
+$ defaults write -g KeyRepeat -int 1
+```
+
+Log out and back in for them to take effect.
