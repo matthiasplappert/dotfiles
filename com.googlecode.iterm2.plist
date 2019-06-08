@@ -930,6 +930,10 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>96CB1C53-686C-4836-96E7-8B6AC53C5E7E</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
