@@ -3,12 +3,13 @@ dotfiles
 
 ## Fonts
 
-Powerline fonts can be found here: https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro
+Powerline fonts can be found here: https://github.com/powerline/fonts/tree/master/Meslo%20Slashed
 
 ## Full setup
 
 ```sh
-$ git clone git@github.com:schickling/dotfiles.git .dotfiles
+$ cd ~/
+$ git clone git@github.com:matthiasplappert/dotfiles.git .dotfiles
 $ bash .dotfiles/install.sh
 ```
 
