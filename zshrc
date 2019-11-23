@@ -18,3 +18,4 @@ export PATH=$HOME/.dotfiles/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 for f in $DOTFILES/aliases/*.sh; do source $f; done
 source $DOTFILES/localrc
+export PATH="/usr/local/sbin:$PATH"

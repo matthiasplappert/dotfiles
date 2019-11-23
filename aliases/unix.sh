@@ -12,6 +12,8 @@ alias tk="tmux kill-session -t"
 
 alias v="vim"
 
+alias linter="$HOME/.pyenv/shims/flake8"
+
 function httpsrv {
   port="${1:-3000}"
   ruby -run -e httpd . -p $port

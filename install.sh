@@ -9,6 +9,7 @@ ln -s ~/.dotfiles/vim/colors ~/.vim/colors
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/zshrc ~/.zshrc
+touch ~/.dotfiles/localrc
 
 # Checkout submodule
 git submodule sync; git submodule update --init --recursive;
