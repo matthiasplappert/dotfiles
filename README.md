@@ -18,7 +18,8 @@ $ brew update
 ```sh
 $ cd ~/
 $ git clone git@github.com:matthiasplappert/dotfiles.git .dotfiles
-$ bash .dotfiles/install.sh
+$ cd .dotfiles/
+$ bash install.sh
 ```
 
 ## Install iTerm2
