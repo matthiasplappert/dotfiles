@@ -42,6 +42,7 @@ $ bash install.sh
     * `SublimeLinter-flake8`
     * `Theme - Solarized Space`
 * Copy `Preferences.sublime-settings` into User preferences
+* Copy `Default.sublime-mousemap` into `~/Library/Application\ Support/Sublime\ Text 3/Packages/User`
 
 ## Install pyenv and Python
 ```sh
