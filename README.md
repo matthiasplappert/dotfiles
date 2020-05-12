@@ -41,6 +41,7 @@ $ bash install.sh
     * `SublimeLinter`
     * `SublimeLinter-flake8`
     * `Theme - Solarized Space`
+    * `GitGutter`
 * Copy `Preferences.sublime-settings` into User preferences
 * Copy `Default.sublime-mousemap` into `~/Library/Application\ Support/Sublime\ Text 3/Packages/User`
 
