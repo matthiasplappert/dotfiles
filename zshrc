@@ -3,7 +3,6 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 plugins=(git brew pyenv)
 DEFAULT_USER="$(whoami)"
 UPDATE_ZSH_DAYS=4
-#ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # locale

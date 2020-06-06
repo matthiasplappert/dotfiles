@@ -22,12 +22,16 @@ $ cd .dotfiles/
 $ bash install.sh
 ```
 
+## Install powerline10k
+* `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k`
+* Configure everything (will install font etc)
+* Replace config: `ln -s ~/.dotfiles/p10k.zsh ~/.p10k.zsh`
+
 ## Install iTerm2
-* Install Powerline fonts: https://github.com/powerline/fonts/tree/master/Meslo%20Slashed
 * Download https://www.iterm2.com
 * Configure iTerm to use preferences from `~/.dotfiles` in `Preferences > General > Load preferences from custom folder or URL`
 * Restart iTerm2
-* Update font settings to `Meslo LG M 13pt`
+* Update font settings to `Meslo LGS NF 13pt`
 * Check `Save changes to folder when iTerm2 quits`
 
 ## Install Sublime
@@ -42,8 +46,9 @@ $ bash install.sh
     * `SublimeLinter-flake8`
     * `Theme - Solarized Space`
     * `GitGutter`
-* Copy `Preferences.sublime-settings` into User preferences
-* `ln -s ~/.dotfiles/Default.sublime-mousemap ~/Library/Application\ Support/Sublime\ Text \3/Packages/User/Default.sublime-mousemap`
+* Install symlinks
+    * `ln -s ~/.dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings`
+    * `ln -s ~/.dotfiles/Default.sublime-mousemap ~/Library/Application\ Support/Sublime\ Text \3/Packages/User/Default.sublime-mousemap`
 
 ## Install pyenv and Python
 ```sh
