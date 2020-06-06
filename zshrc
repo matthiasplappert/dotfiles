@@ -1,6 +1,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.dotfiles/oh-my-zsh
-plugins=(git gem rake brew go)
+plugins=(git brew)
 DEFAULT_USER="$(whoami)"
 UPDATE_ZSH_DAYS=4
 ZSH_THEME="agnoster"

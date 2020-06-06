@@ -43,7 +43,7 @@ $ bash install.sh
     * `Theme - Solarized Space`
     * `GitGutter`
 * Copy `Preferences.sublime-settings` into User preferences
-* Copy `Default.sublime-mousemap` into `~/Library/Application\ Support/Sublime\ Text 3/Packages/User`
+* `ln -s ~/.dotfiles/Default.sublime-mousemap ~/Library/Application\ Support/Sublime\ Text \3/Packages/User/Default.sublime-mousemap`
 
 ## Install pyenv and Python
 ```sh
