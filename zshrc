@@ -1,6 +1,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.dotfiles/oh-my-zsh
-plugins=(git brew pyenv)
+plugins=(git brew)
 DEFAULT_USER="$(whoami)"
 UPDATE_ZSH_DAYS=4
 ZSH_THEME="powerlevel10k/powerlevel10k"
