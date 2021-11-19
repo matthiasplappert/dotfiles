@@ -10,7 +10,7 @@
 	"hide_sidebar_icons": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"rulers":
 	[
@@ -19,5 +19,5 @@
 	"spell_check": true,
 	"tab_size": 4,
 	"theme": "Solarized Space Dark.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
 }
