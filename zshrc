@@ -13,12 +13,12 @@ export LANG=en_US.UTF-8
 export DOTFILES=$HOME/.dotfiles
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.dotfiles/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # sources
 source $ZSH/oh-my-zsh.sh
 for f in $DOTFILES/aliases/*.sh; do source $f; done
 source $DOTFILES/localrc
-export PATH="/usr/local/sbin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
