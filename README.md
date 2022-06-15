@@ -68,6 +68,15 @@ $ defaults write -g InitialKeyRepeat -int 10
 $ defaults write -g KeyRepeat -int 1
 ```
 
+* `Preferences > Keyboard > Shortcuts > App Shortcuts`
+    * Add Item for `Mail`
+    * Set `Menu Title` to `Archive`
+    * Set `Keyboard Shortcut` to `CMD + E`
+* `Preferences > Keyboard > Shortcuts > App Shortcuts`
+    * Add Item for `All Applications`
+    * Set `Menu Title` to `Paste and Match Style`
+    * Set `Keyboard Shortcut` to `CMD + SHIFT + V`
+
 Log out and back in for them to take effect.
 
 ## Install MonitorControl
