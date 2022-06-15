@@ -31,7 +31,6 @@ $ bash install.sh
 * Download https://www.iterm2.com
 * Configure iTerm to use preferences from `~/.dotfiles` in `Preferences > General > Load preferences from custom folder or URL`
 * Restart iTerm2
-* Update font settings to `Meslo LGS NF 13pt`
 * Check `Save changes to folder when iTerm2 quits`
 
 ## Install Sublime
@@ -53,20 +52,14 @@ $ bash install.sh
 ## Install pyenv and Python
 ```sh
 $ brew install pyenv
-$ brew install zlib
-$ brew install sqlite
-$ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
-$ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
-$ export LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
-$ export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
-$ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
-$ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
-$ pyenv install 3.6.8
+$ brew install pyenv-virtualenv
+$ pyenv install 3.10.4
 ```
 
 Also add the following to `localrc`:
 ```bash
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 ```
 
 ## Configure keyboard input
