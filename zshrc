@@ -12,6 +12,9 @@ DEFAULT_USER="$(whoami)"
 UPDATE_ZSH_DAYS=14
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
