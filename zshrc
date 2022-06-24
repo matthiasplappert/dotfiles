@@ -1,3 +1,5 @@
+export DOTFILES=$HOME/.dotfiles
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -17,7 +19,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # paths
-export DOTFILES=$HOME/.dotfiles
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.dotfiles/bin:$PATH
 export PATH=/usr/local/sbin:$PATH

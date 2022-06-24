@@ -62,6 +62,16 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
+## Install direnv
+```sh
+brew install direnv
+```
+
+Also add the following to `localrc`:
+```bash
+eval "$(direnv hook zsh)"
+```
+
 ## Configure keyboard input
 ```sh
 $ defaults write -g InitialKeyRepeat -int 10
