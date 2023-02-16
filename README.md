@@ -93,6 +93,21 @@ Log out and back in for them to take effect.
 Follow instructions here: https://github.com/MonitorControl/MonitorControl
 
 ## Install Elgato lights
+Create a file: ~/Library/LaunchAgents/com.user.loginscript.plist
+
 ```
-/usr/bin/osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Users/matthiasplappert/.dotfiles/bin/elgato", hidden:true}'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Label</key>
+   <string>com.user.loginscript</string>
+   <key>ProgramArguments</key>
+   <array><string>/Users/matthiasplappert/.dotfiles/bin/elgato</string></array>
+   <key>RunAtLoad</key>
+   <true/>
+</dict>
+</plist>
 ```
+
+Source: https://stackoverflow.com/questions/6442364/running-script-upon-login-in-mac-os-x
