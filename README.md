@@ -91,3 +91,8 @@ Log out and back in for them to take effect.
 
 ## Install MonitorControl
 Follow instructions here: https://github.com/MonitorControl/MonitorControl
+
+## Install Elgato lights
+```
+/usr/bin/osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Users/matthiasplappert/.dotfiles/bin/elgato", hidden:true}'
+```
