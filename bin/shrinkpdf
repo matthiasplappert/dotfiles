@@ -17,4 +17,4 @@ else
     quality="ebook"
 fi
 
-/usr/local/bin/gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/"$quality"  -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$2" "$1"
+$(brew --prefix ghostscript)/bin/gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/"$quality"  -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$2" "$1"
