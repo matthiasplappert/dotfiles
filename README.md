@@ -89,6 +89,14 @@ $ defaults write -g KeyRepeat -int 1
 
 Log out and back in for them to take effect.
 
+## Remove Tahoe menu bar icons
+
+```bash
+defaults write -g NSMenuEnableActionImages -bool NO
+```
+
+Log out and back in for them to take effect.
+
 ## Install MonitorControl
 Follow instructions here: https://github.com/MonitorControl/MonitorControl
 
