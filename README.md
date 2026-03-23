@@ -33,6 +33,9 @@ $ bash install.sh
 * Restart iTerm2
 * Check `Save changes to folder when iTerm2 quits`
 
+## Install additional oh-my-zsh packages
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+
 ## Install Sublime
 * Download and install Sublime
 * Install Package Control: https://packagecontrol.io/installation
